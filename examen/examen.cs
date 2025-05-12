@@ -566,23 +566,32 @@ while(true){
     if(!examen.Evaluar()) break;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     if(examen.ExamenPerfecto()) {
         examen.Informar();
         WriteLine("\n🎉 Felicitaciones. Respondiste todas las preguntas correctamente. 🎉\n");
         if(preguntas.Count() == 10){
 =======
+=======
+>>>>>>> Stashed changes
     preguntas.GuardarResultados($"{legajo}.txt");
     if(examen.ExamenPerfecto()) {
         examen.Informar();
         WriteLine("\n🎉 Felicitaciones. Respondiste todas las preguntas correctamente. 🎉\n");
         if(cantidad == 10){
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             WriteLine($"Su código es: {GenerarCodigo(legajo, semilla)}\n\nCompartirlo en el grupo para conseguir los creditos\n");
         }
         break;
     } else {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         preguntas.GuardarResultados($"{legajo}.txt");
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         examen.Enseñar();
