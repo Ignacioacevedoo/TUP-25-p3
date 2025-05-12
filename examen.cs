@@ -565,26 +565,15 @@ var examen = new Examen(preguntas, cantidad, legajo, semilla);
 while(true){
     if(!examen.Evaluar()) break;
 
-<<<<<<< Updated upstream
-    if(examen.ExamenPerfecto()) {
-        examen.Informar();
-        WriteLine("\n🎉 Felicitaciones. Respondiste todas las preguntas correctamente. 🎉\n");
-        if(preguntas.Count() == 10){
-=======
     preguntas.GuardarResultados($"{legajo}.txt");
     if(examen.ExamenPerfecto()) {
         examen.Informar();
         WriteLine("\n🎉 Felicitaciones. Respondiste todas las preguntas correctamente. 🎉\n");
         if(cantidad == 10){
->>>>>>> Stashed changes
             WriteLine($"Su código es: {GenerarCodigo(legajo, semilla)}\n\nCompartirlo en el grupo para conseguir los creditos\n");
         }
         break;
     } else {
-<<<<<<< Updated upstream
-        preguntas.GuardarResultados($"{legajo}.txt");
-=======
->>>>>>> Stashed changes
         examen.Enseñar();
         if(Confirmar("¿Desea repetir el examen para conseguir los creditos?")) {
             examen.ReiniciarExamen();
